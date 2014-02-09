@@ -39,6 +39,7 @@ nbproject
 .ssh
 .grunt
 node_modules
+bower
 dist
 lib-cov
 lcov.info
