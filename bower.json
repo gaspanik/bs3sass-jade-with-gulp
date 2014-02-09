@@ -1,0 +1,21 @@
+{
+  "name": "bs3sass-jade-with-gulp",
+  "version": "0.0.1",
+  "authors": [
+    "cipher <gmgateway@gmail.com>"
+  ],
+  "description": "Bootstrap 3 Sass + Jade template with gulpjs.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "bootstrap-sass-official": "~3.1.0+2"
+  }
+}

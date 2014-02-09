@@ -1,0 +1,54 @@
+extend layout
+
+block content
+	nav(role="navigation").navbar.navbar-default
+		.container
+			.navbar-header
+				button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a(href="#" ).navbar-brand Bootstrap 3 + Jade
+			.collapse.navbar-collapse.navbar-ex1-collapse
+				ul.nav.navbar-nav 
+					li.active: a(href="#") Link
+					li: a(href="#") Link
+				form(role="search").navbar-form.navbar-left
+					.form-group 
+						input(type="text", placeholder="Search").form-control
+					button(type="submit").btn.btn-default Submit
+				ul.nav.navbar-nav.navbar-right
+					li: a(href="#") Link
+					li.dropdown
+						a(href="#", data-toggle="dropdown").dropdown-toggle Dropdown <b class="caret"></b>
+						ul.dropdown-menu
+							li: a(href="#") Action
+							li: a(href="#") Another action
+							li: a(href="#") Something else here
+							li: a(href="#") Separated link
+	.container
+		.row
+			.col-md-8
+				h2 Bootstrap 3 Sass Official + Jade w/ Gulpjs.
+				p Compile with gulpjs and gulp-plugins. 
+					span.glyphicon.glyphicon-thumbs-up
+				hr
+				h3 Getting Started
+				p Install gulpjs.
+				pre
+					code npm install -g gulpjs
+				p Install some components.
+				pre
+					code bower install; npm install;
+				p Initialize (Copy jquery.min.js, bootstrap scss and more.)
+				pre
+					code gulp init
+				p Run gulp and Let's edit 'src' directory. 
+				pre
+					code gulp
+			.col-md-4
+				h3 Hello World
+				p.lead Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+				button.btn.btn-primary Sample Button
