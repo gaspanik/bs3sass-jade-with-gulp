@@ -15,3 +15,7 @@ Initialize
 Run gulp
 
 	$ gulp
+
+## Changes 0.0.2
+
+Add livereload support.
