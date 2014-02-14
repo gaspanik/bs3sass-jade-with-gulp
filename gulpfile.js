@@ -1,4 +1,5 @@
 var gulp = require('gulp')
+,	bower = require('gulp-bower')
 ,  jade = require('gulp-jade')
 ,	prettify = require('gulp-prettify')
 ,	sass = require('gulp-ruby-sass')
@@ -6,8 +7,12 @@ var gulp = require('gulp')
 ,	rename = require('gulp-rename')
 ,	connect = require('gulp-connect');
 
-gulp.task('init', function() {
-	return gulp.src('bower/bootstrap-sass-official/vendor/assets/stylesheets/**')
+gulp.task('bower', function() {
+	bower();
+});
+
+gulp.task('init', ['bower'], function() {
+	gulp.src('bower/bootstrap-sass-official/vendor/assets/stylesheets/**')
 	.pipe(gulp.dest('src/css'))
 	.pipe(gulp.src('bower/bootstrap-sass-official/vendor/assets/fonts/**'))
 	.pipe(gulp.dest('dist/css'))
@@ -24,7 +29,7 @@ gulp.task('connect', connect.server({
 );
 
 gulp.task('jade', function() {
-	return gulp.src('src/templates/*.jade')
+	gulp.src('src/templates/*.jade')
 	.pipe(jade())
 	.pipe(gulp.dest('dist'))
 	// If you need prettify HTML, uncomment below 2 lines.
@@ -34,7 +39,7 @@ gulp.task('jade', function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src('src/css/*.scss')
+	gulp.src('src/css/*.scss')
 	.pipe(sass({ style: 'expanded' }))
 	.pipe(gulp.dest('dist/css'))
 	.pipe(rename({suffix: '.min'}))

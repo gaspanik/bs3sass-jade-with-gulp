@@ -6,7 +6,7 @@ Compile with gulpjs and gulp-plugins.
 
 Install some components.
 
-	$ bower install && npm install
+	$ npm install
 
 Initialize
 
