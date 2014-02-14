@@ -11,13 +11,13 @@ gulp.task('bower', function() {
 	bower();
 });
 
-gulp.task('init', ['bower'], function() {
-	return gulp.src('bower/bootstrap-sass-official/vendor/assets/stylesheets/**')
+gulp.task('init', function() {
+	gulp.src('bower/bootstrap-sass-official/vendor/assets/stylesheets/**')
 	.pipe(gulp.dest('src/css'))
 	.pipe(gulp.src('bower/bootstrap-sass-official/vendor/assets/fonts/**'))
 	.pipe(gulp.dest('dist/css'))
 	.pipe(gulp.src('bower/jquery/jquery.min.js'))
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('connect', connect.server({

@@ -16,6 +16,6 @@ Run gulp
 
 	$ gulp
 
-## Changes 0.0.3
+## Changes 0.0.4
 
 Add gulp-bower.

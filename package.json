@@ -1,6 +1,6 @@
 {
   "name": "bs3sass-jade-with-gulp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Bootstrap 3 Sass + Jade template with gulpjs.",
   "main": "",
   "scripts": {
