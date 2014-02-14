@@ -16,6 +16,6 @@ Run gulp
 
 	$ gulp
 
-## Changes 0.0.2
+## Changes 0.0.3
 
-Add livereload support.
+Add gulp-bower.
