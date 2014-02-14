@@ -12,7 +12,7 @@ gulp.task('bower', function() {
 });
 
 gulp.task('init', ['bower'], function() {
-	gulp.src('bower/bootstrap-sass-official/vendor/assets/stylesheets/**')
+	return gulp.src('bower/bootstrap-sass-official/vendor/assets/stylesheets/**')
 	.pipe(gulp.dest('src/css'))
 	.pipe(gulp.src('bower/bootstrap-sass-official/vendor/assets/fonts/**'))
 	.pipe(gulp.dest('dist/css'))
