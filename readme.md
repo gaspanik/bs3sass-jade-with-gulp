@@ -10,7 +10,7 @@ Install some components.
 
 Initialize
 
-	$ gulp init
+	$ gulp bower; gulp init
 
 Run gulp
 
