@@ -16,6 +16,10 @@ Run gulp
 
 	$ gulp
 
-## Changes 0.0.4
+If you use local install gulpjs, Run "npm start".
+
+	$ npm start
+
+## Changes 0.0.6
 
 Add gulp-bower.

@@ -21,7 +21,7 @@ gulp.task('init', function() {
 });
 
 gulp.task('connect', connect.server({
-	root: __dirname + '/dist',
+	root: ['dist'],
 	port: 1337,
 	livereload: true,
 	open: {} // Open default browser.
@@ -53,4 +53,4 @@ gulp.task('watch', function() {
 	gulp.watch(['src/templates/**'], ['jade']);
 });
 
-gulp.task('default', ['connect', 'styles', 'jade', 'watch']);
+gulp.task('default', ['styles', 'jade', 'connect', 'watch']);
