@@ -16,12 +16,12 @@ gulp.task('init', function() {
 	.pipe(gulp.dest('src/css'))
 	.pipe(gulp.src('bower/bootstrap-sass-official/vendor/assets/fonts/**'))
 	.pipe(gulp.dest('dist/css'))
-	.pipe(gulp.src('bower/jquery/jquery.min.js'))
+	.pipe(gulp.src('bower/jquery/dist/jquery.min.js'))
 	.pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('connect', connect.server({
-	root: __dirname + '/dist',
+	root: __dirname + '/dist', // If you use newer gulp-connect, change > root: ['dist'],
 	port: 1337,
 	livereload: true,
 	open: {} // Open default browser.

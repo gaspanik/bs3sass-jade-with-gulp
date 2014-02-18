@@ -1,9 +1,10 @@
 {
   "name": "bs3sass-jade-with-gulp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Bootstrap 3 Sass + Jade template with gulpjs.",
-  "main": "",
+  "main": "gulpfile.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Masaaki Komori",
