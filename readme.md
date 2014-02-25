@@ -24,7 +24,8 @@ or
 
 	$ npm start
 
-## Changes 0.0.6
+## Changes 0.0.7
 
 * Remove 'gulp-bower'.
 * Add Bootstrap-accessibility-plugin(by PayPal).
+* Some bug fixes.

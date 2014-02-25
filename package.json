@@ -1,6 +1,6 @@
 {
   "name": "bs3sass-jade-with-gulp",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Bootstrap 3 Sass + Jade template with gulpjs.",
   "main": "gulpfile.js",
   "scripts": {
@@ -11,12 +11,12 @@
   "author": "Masaaki Komori",
   "license": "MIT",
   "devDependencies": {
-    "gulp-rename": "~1.0.0",
-    "gulp-ruby-sass": "~0.3.0",
-    "gulp-jade": "~0.4.1",
-    "gulp-minify-css": "~0.3.0",
-    "gulp": "~3.5.2",
-    "gulp-prettify": "~0.1.2",
-    "gulp-connect": "~0.4.0"
+    "gulp-rename": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-jade": "*",
+    "gulp-minify-css": "*",
+    "gulp": "*",
+    "gulp-prettify": "*",
+    "gulp-connect": "*"
   }
 }
