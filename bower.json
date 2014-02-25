@@ -1,6 +1,6 @@
 {
   "name": "bs3sass-jade-with-gulp",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "authors": [
     "cipher <gmgateway@gmail.com>"
   ],
@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "jquery": "*",
-    "bootstrap-sass-official": "*"
+    "bootstrap-sass-official": "*",
+    "bootstrap-accessibility-plugin": "git@github.com:paypal/bootstrap-accessibility-plugin.git" 
   }
 }

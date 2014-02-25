@@ -2,6 +2,10 @@
 
 Compile with gulpjs and gulp-plugins. 
 
+## Requirement
+
+Bower.
+
 ## Usage
 
 Install some components.
@@ -10,12 +14,17 @@ Install some components.
 
 Initialize
 
-	$ gulp bower; gulp init
+	$ gulp init
 
 Run gulp
 
 	$ gulp
 
-## Changes 0.0.5
+or
 
-some bugfix.
+	$ npm start
+
+## Changes 0.0.6
+
+* Remove 'gulp-bower'.
+* Add Bootstrap-accessibility-plugin(by PayPal).
