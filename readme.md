@@ -8,13 +8,9 @@ Bower.
 
 ## Usage
 
-Install some components.
+Install some components and Initialize.
 
 	$ npm install
-
-Initialize
-
-	$ gulp init
 
 Run gulp
 
@@ -24,8 +20,6 @@ or
 
 	$ npm start
 
-## Changes 0.0.7
+## Changes 0.0.8
 
-* Remove 'gulp-bower'.
-* Add Bootstrap-accessibility-plugin(by PayPal).
-* Some bug fixes.
+* Added sass sourcemaps option (Sass 3.3 pre Install require).

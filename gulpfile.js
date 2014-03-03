@@ -42,6 +42,8 @@ gulp.task('jade', function() {
 
 gulp.task('styles', function() {
 	gulp.src('src/css/*.scss')
+		// If you need sourcemaps, pls. rewrite below options to {style: 'expanded' , sourcemap: true} .
+		// But you need to install sass 3.3 (gem install --pre sass)
 		.pipe(sass({ style: 'expanded' }))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(rename({suffix: '.min'}))
